@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Liquids</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content>
+  <form>
+ 
+    <!-- Select the liquid measurement to convert from-->
+    <p>From</p>
+    <ion-select name="converts" id="Selection" [(ngModel)]="eka">
+      <ion-select-option value="liters1">Liters</ion-select-option>
+      <ion-select-option value="deci1">Deciliters</ion-select-option>
+      <ion-select-option value="cups1">Cups</ion-select-option>
+      <ion-select-option value="pints1">Pints</ion-select-option>
+      <ion-select-option value="quarts1">Quarts</ion-select-option>
+      <ion-select-option value="gallons1">Gallons</ion-select-option>
+    </ion-select>
+ 
+    <!-- Select the liquid measurement to convert to-->
+    <p>To<p>
+    <ion-select name="converts2" id="Selection2" [(ngModel)]="toka">
+      <ion-select-option value="liters1">Liters</ion-select-option>
+      <ion-select-option value="deci1">Deciliters</ion-select-option>
+      <ion-select-option value="cups1">Cups</ion-select-option>
+      <ion-select-option value="pints1">Pints</ion-select-option>
+      <ion-select-option value="quarts1">Quarts</ion-select-option>
+      <ion-select-option value="gallons1">Gallons</ion-select-option>
+    </ion-select>
+ 
+ 
+ <!--Input desired value-->
+ <br>
+    
+ <p>Value</p>
+ <ion-input type="number" name="value" [(ngModel)]="value" id="value" placeholder="Insert value" (ionChange)="conversion()"> </ion-input>
+
+
+ <!--Converted length measurment value -->
+ 
+ <p>Conversion</p>
+ <div class="ion-input" type="number"  name="convertedOutput" [(ngModel)]="convertedOutput" id="convertedOutput" value="Disabled">
+ </div>   
+
+ 
+  </form>
+ 
+ 
+</ion-content>

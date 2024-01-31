@@ -1,0 +1,31 @@
+# Dependency directories
+node_modules/
+platforms/
+plugins/
+
+# Build output
+/www/
+
+# Cordova files
+cordova-res/
+*.code-workspace
+*.db
+
+# Various log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.vs/
+*.swp
+*.lock
+
+# System Files
+.DS_Store
+Thumbs.db
